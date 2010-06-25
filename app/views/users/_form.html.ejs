@@ -1,0 +1,13 @@
+<form id="modelItemForm" method="post" action="<%= params.formAction %>" onsubmit="validateSubmit(); return false;">
+<div>Login</div>
+<div><input type="text" id="login" name="login" value="<%= params.login || '' %>" size="24"/></div>
+<div>Password</div>
+<div><input type="password" id="password" name="password" value="<%= params.password || '' %>" size="24"/></div>
+<div>Confirm Password</div>
+<div><input type="password" id="confirmPassword" name="confirmPassword" value="" size="24"/></div>
+<div>LastName</div>
+<div><input type="text" id="lastName" name="lastName" value="<%= params.lastName || '' %>" size="24"/></div>
+<div>FirstName</div>
+<div><input type="text" id="firstName" name="firstName" value="<%= params.firstName || '' %>" size="24"/></div>
+<input type="submit" value="Submit"/>
+</form>
